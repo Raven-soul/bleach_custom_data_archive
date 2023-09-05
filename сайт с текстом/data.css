@@ -26,3 +26,15 @@
     min-height: 15px;
     background-color: rgb(116, 163, 27);
 }
+
+.done-col {
+    background-color: aliceblue;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+}
+
+.galochka {
+    width: auto;
+    height: 12px;
+}
