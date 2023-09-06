@@ -1,6 +1,6 @@
 function start() {
     debugger;
-    fetch("global_text.txt")
+    fetch("db_file.sqlite3")
         .then((res) => res.text())
         .then((text) => {
             alert(text)
