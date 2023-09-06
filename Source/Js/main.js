@@ -1,12 +1,9 @@
-function start() {
-    debugger;
-    fetch("db_bleach.sqlite3")
+function start(){
+    fetch("data.txt")
         .then((res) => res.text())
         .then((text) => {
-            let db = new SQL.Database(text);
-            let stmt = db.prepare("SELECT * FROM Class");
-            var row = stmt.get(1);
-            alert(row);
+            var mydata = JSON.parse(text);
+            alert(mydata.table[0].Id);
         })
         .catch((e) => console.error(e));
 }
