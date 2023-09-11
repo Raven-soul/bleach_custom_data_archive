@@ -27,6 +27,28 @@
     background-color: rgb(116, 163, 27);
 }
 
+.mini-chapter-2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 15px;
+    background-color: rgb(5, 2, 180);
+}
+
+.mini-chapter-3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 15px;
+    background-color: rgb(255, 187, 0);
+}
+
 .done-col {
     background-color: aliceblue;
     border: solid black 1px;
