@@ -44,7 +44,9 @@ function mainPageBuilder (menuContent, templates){
             tempMenuList = tempMenuList + tempListStroke;
         });
 
-        summHtmlBlock = summHtmlBlock + tempMenuList;
+        tempMenuStroke = tempMenuStroke.replace("@@LISTDATA@@", tempMenuList);
+
+        summHtmlBlock = summHtmlBlock + tempMenuStroke;
     });
 
     menuBlock.html( summHtmlBlock );
