@@ -5,29 +5,31 @@ async function getTemplatesData() {
     .then(async (text) => { 
         debugger
         var JSONdata = JSON.parse(text);
-        return await JSONdata.templates; 
+        getMenuContentData(JSONdata.templates); 
     })
     .catch((e) => console.error(e));
     return result;
 }
 
-async function getMenuContentData() {
+async function getMenuContentData(templatesData) {
     var result;
     fetch("Source/Json/menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
     .then((res) => res.text())
     .then(async (text) => {
         debugger
         var JSONdata = JSON.parse(text);
-        return await JSONdata.mainMenuTableData; 
+        mainPageBuilder(JSONdata.mainMenuTableData, templatesData); 
     })
     .catch((e) => console.error(e));
     
 }
 
 async function start(){
+    getTemplatesData();
+}
+
+function mainPageBuilder (menuContent, templates){
     var menuBlock = $(".main-menu-block .row-2").html();
-    var templates = await getTemplatesData();
-    var menuContent = await getMenuContentData();
     var summHtmlBlock = "";
     debugger
 
