@@ -1,23 +1,25 @@
 function getTemplatesData() {
+    let result;
     fetch("Source\\Json\\menu_data_templates.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data_templates.json
     .then((res) => res.text())
     .then((text) => { 
         var JSONdata = JSON.parse(text);
-        return JSONdata.templates; 
+        result = JSONdata.templates; 
     })
     .catch((e) => console.error(e));
-    return "";
+    return result;
 }
 
 function getMenuContentData() {
+    let result;
     fetch("Source\\Json\\menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
     .then((res) => res.text())
     .then((text) => {
         var JSONdata = JSON.parse(text);
-        return JSONdata.mainMenuTableData; 
+        result = JSONdata.mainMenuTableData; 
     })
     .catch((e) => console.error(e));
-    return "";
+    return result;
 }
 
 function start(){
