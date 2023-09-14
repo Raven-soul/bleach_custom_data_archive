@@ -24,10 +24,10 @@ function getMenuContentData() {
     return result;
 }
 
-function start(){
+async function start(){
     var menuBlock = $(".main-menu-block .row-2").html();
-    var templates = getTemplatesData();
-    var menuContent = getMenuContentData();
+    var templates = await getTemplatesData();
+    var menuContent = await getMenuContentData();
     var summHtmlBlock = "";
     debugger
 
