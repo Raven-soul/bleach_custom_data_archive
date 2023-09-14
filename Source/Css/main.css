@@ -20,6 +20,10 @@
     .parting-words {
         display: none;
     }
+    .parting-words-wide {
+        display: flex;
+        align-items: center;
+    }
 }
 @media (max-width: 992px) {
     body {
@@ -51,7 +55,6 @@
     .parting-words-wide {
         display: none;
     }
-
 }
 
 .header-row {
