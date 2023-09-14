@@ -3,6 +3,7 @@ function getTemplatesData() {
     fetch("Source\\Json\\menu_data_templates.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data_templates.json
     .then((res) => res.text())
     .then((text) => { 
+        debugger
         var JSONdata = JSON.parse(text);
         result = JSONdata.templates; 
     })
@@ -15,6 +16,7 @@ function getMenuContentData() {
     fetch("Source\\Json\\menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
     .then((res) => res.text())
     .then((text) => {
+        debugger
         var JSONdata = JSON.parse(text);
         result = JSONdata.mainMenuTableData; 
     })
