@@ -1,7 +1,8 @@
 function getTemplatesData() {
     fetch("Source\\Json\\menu_data_templates.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data_templates.json
     .then((res) => res.text())
-    .then((text) => {
+    .then((text) => { 
+        debugger
         var JSONdata = JSON.parse(text);
         return JSONdata.templates; 
     })
@@ -13,6 +14,7 @@ function getMenuContentData() {
     fetch("Source/Json/menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
     .then((res) => res.text())
     .then((text) => {
+        debugger
         var JSONdata = JSON.parse(text);
         return JSONdata.mainMenuTableData; 
     })
@@ -25,6 +27,7 @@ function start(){
     var templates = getTemplatesData();
     var menuContent = getMenuContentData();
     var summHtmlBlock = "";
+    debugger
 
     menuContent.forEach((menuElement) => {
         let tempMenuStroke = templates[0].data;
