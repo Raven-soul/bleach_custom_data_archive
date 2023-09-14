@@ -139,6 +139,12 @@ footer {
     color: white;
     text-decoration: none;
 }
+.main-menu-block-item-list button .content-data {
+    text-align: left;
+}
+.main-menu-block-item-list button .image-data {
+    text-align: right;
+}
 .main-menu-block-item-list button:hover {
     color: rgb(30, 161, 13);
     text-decoration: solid white 2px;

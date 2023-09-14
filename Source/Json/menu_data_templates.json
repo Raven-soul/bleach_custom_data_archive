@@ -8,7 +8,8 @@
         {
             "Id":1,
             "Name": "mainMenuTableRowListItem",
-            "data": "<li><button onclick=\"@@LIROWFUNCTION@@\"><div class=\"row\"><div class=\"col-2\">@@LIROWICO@@</div><div class=\"col-auto\">@@LIROWNAME@@</div></div></button></li>"
+            "data": "<li><button onclick=\"@@LIROWFUNCTION@@\" class=\"w-100\"><div class=\"row\"><div class=\"col-1 px-0 image-data\">@@LIROWICO@@</div><div class=\"col content-data\">@@LIROWNAME@@</div></div></button></li>"
         }
     ]
 }
+

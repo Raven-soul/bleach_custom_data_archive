@@ -34,7 +34,6 @@ function mainPageBuilder (menuContent, templates){
     menuContent.forEach((menuElement) => {
         let tempMenuStroke = templates[0].data;
         let tempMenuList = "";
-        debugger
         tempMenuStroke = tempMenuStroke.replace("@@MENUROWDATA@@", menuElement.Name);
         menuElement.List.forEach((listElement) => {
             let tempListStroke = templates[1].data;
