@@ -1,5 +1,5 @@
 function getTemplatesData() {
-    fetch("Source/Json/menu_data_templates.json")
+    fetch("Source\\Json\\menu_data_templates.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data_templates.json
     .then((res) => res.text())
     .then((text) => {
         var JSONdata = JSON.parse(text);
@@ -10,7 +10,7 @@ function getTemplatesData() {
 }
 
 function getMenuContentData() {
-    fetch("Source/Json/menu_data.json")
+    fetch("Source/Json/menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
     .then((res) => res.text())
     .then((text) => {
         var JSONdata = JSON.parse(text);
@@ -26,12 +26,12 @@ function start(){
     var menuContent = getMenuContentData();
     var summHtmlBlock = "";
 
-    menuContent.forEach(menuElement => {
+    menuContent.forEach((menuElement) => {
         let tempMenuStroke = templates[0].data;
         let tempMenuList = "";
 
         tempMenuStroke.replace("@@MENUROWDATA@@", menuElement.Name);
-        menuElement.List.forEach(listElement => {
+        menuElement.List.forEach((listElement) => {
             let tempListStroke = templates[1].data;
             tempListStroke.replace("@@LIROWFUNCTION@@", listElement.Function);
             tempListStroke.replace("@@LIROWICO@@", listElement.ico);
