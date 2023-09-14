@@ -13,7 +13,7 @@ function getTemplatesData() {
 
 function getMenuContentData() {
     let result;
-    fetch("Source\\Json\\menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
+    fetch("Source/Json/menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
     .then((res) => res.text())
     .then((text) => {
         debugger
