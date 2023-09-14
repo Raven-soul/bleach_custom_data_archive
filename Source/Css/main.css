@@ -14,8 +14,7 @@
         display: none;
     }
     body {
-        background-image: url("../Images/urahara_back_vert.png");
-        background-repeat:no-repeat;
+        background-image: url("../Images/back_vert.png");
         background-size:cover;
     }
 }
