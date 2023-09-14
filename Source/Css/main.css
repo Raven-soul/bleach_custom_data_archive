@@ -1,16 +1,60 @@
-@media (max-width: 992px) {
-    .col-1-editeble {
+@media (min-width: 992px) {
+    .list-button {
         display: none;
     }
-    .col-2-editeble {
-        display: block;
+    body {
+        background-image: url("../Images/urahara_back.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+}
+@media (max-width: 992px) {
+    .main-menu-block {
+        display: none;
+    }
+    body {
+        background-image: url("../Images/urahara_back_vert.png");
+        background-repeat:no-repeat;
+        background-size:cover;
     }
 }
-@media (max-width: 700px) {
-    .col-2-editeble {
-        display: none;
-    }
-    .col-1-editeble {
-        display: block;
-    }
+.header-row {
+    justify-content: space-between;
+}
+
+.append-button-block { 
+    display: flex;
+    align-items:center;
+}
+
+.header-back {
+    background-color:rgb(44, 43, 42);
+}
+
+
+.main-info-block {
+    background-color: rgb(167, 111, 33);
+}
+
+.home-button, .list-button {
+    background: none;
+    border: none;
+    width: fit-content;
+
+}
+.home-logo {
+    height: 37px;
+}
+
+.list-logo, .dnd-su-logo {
+    width: 30px;
+}
+
+.main-menu-block-item {
+    background-color: rgb(42, 42, 41);
+    border: rgb(87, 87, 87) solid 1px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    color: white;
 }
