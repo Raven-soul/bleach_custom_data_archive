@@ -1,27 +1,27 @@
-function getTemplatesData() {
+async function getTemplatesData() {
     var result;
     fetch("Source/Json/menu_data_templates.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data_templates.json
     .then((res) => res.text())
-    .then((text) => { 
+    .then(async (text) => { 
         debugger
         var JSONdata = JSON.parse(text);
-        result = JSONdata.templates; 
+        return await JSONdata.templates; 
     })
     .catch((e) => console.error(e));
     return result;
 }
 
-function getMenuContentData() {
+async function getMenuContentData() {
     var result;
     fetch("Source/Json/menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
     .then((res) => res.text())
-    .then((text) => {
+    .then(async (text) => {
         debugger
         var JSONdata = JSON.parse(text);
-        result = JSONdata.mainMenuTableData; 
+        return await JSONdata.mainMenuTableData; 
     })
     .catch((e) => console.error(e));
-    return result;
+    
 }
 
 async function start(){
