@@ -35,12 +35,12 @@ function mainPageBuilder (menuContent, templates){
         let tempMenuStroke = templates[0].data;
         let tempMenuList = "";
         debugger
-        tempMenuStroke.replace("@@MENUROWDATA@@", menuElement.Name);
+        tempMenuStroke = tempMenuStroke.replace("@@MENUROWDATA@@", menuElement.Name);
         menuElement.List.forEach((listElement) => {
             let tempListStroke = templates[1].data;
-            tempListStroke.replace("@@LIROWFUNCTION@@", listElement.Function);
-            tempListStroke.replace("@@LIROWICO@@", listElement.ico);
-            tempListStroke.replace("@@LIROWNAME@@", listElement.Name);
+            tempListStroke = tempListStroke.replace("@@LIROWFUNCTION@@", listElement.Function);
+            tempListStroke = tempListStroke.replace("@@LIROWICO@@", listElement.ico);
+            tempListStroke = tempListStroke.replace("@@LIROWNAME@@", listElement.Name);
             tempMenuList = tempMenuList + tempListStroke;
         });
 
