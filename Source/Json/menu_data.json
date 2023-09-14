@@ -1,0 +1,58 @@
+{
+    "mainMenuTableData":[
+        {
+            "Id": 0,
+            "Name": "Справочники",
+            "List": [
+                {
+                    "Id":1,
+                    "Name": "Кидо",
+                    "ico": "<i class=\"fa-solid fa-fire\"></i>",
+                    "Function": ""
+                },
+                {
+                    "Id":2,
+                    "Name": "Магические предметы",
+                    "ico": "<i class=\"fa-solid fa-circle-notch\"></i>",
+                    "Function": ""
+                },
+                {
+                    "Id":3,
+                    "Name": "Бестиарий",
+                    "ico": "<i class=\"fa-solid fa-ghost\"></i>",
+                    "Function": ""
+                },
+                {
+                    "Id":4,
+                    "Name": "Рассы и происхождения",
+                    "ico": "<i class=\"fa-solid fa-user-group\"></i>",
+                    "Function": ""
+                },
+                {
+                    "Id":5,
+                    "Name": "Классы",
+                    "ico": "<i class=\"fa-solid fa-person-digging\"></i>",
+                    "Function": ""
+                },
+                {
+                    "Id":6,
+                    "Name": "Предыстории",
+                    "ico": "<i class=\"fa-regular fa-file-lines\"></i>",
+                    "Function": ""
+                },
+                {
+                    "Id":7,
+                    "Name": "Черты",
+                    "ico": "",
+                    "Function": ""
+                },
+                {
+                    "Id":8,
+                    "Name": "Способности",
+                    "ico": "",
+                    "function": ""
+                }
+            ]
+        }
+    ]
+}

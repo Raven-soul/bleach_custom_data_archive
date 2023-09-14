@@ -1,22 +1,58 @@
+function getTemplatesData() {
+    fetch("Source/Json/menu_data_templates.json")
+    .then((res) => res.text())
+    .then((text) => {
+        var JSONdata = JSON.parse(text);
+        return JSONdata.templates; 
+    })
+    .catch((e) => console.error(e));
+    return "";
+}
+
+function getMenuContentData() {
+    fetch("Source/Json/menu_data.json")
+    .then((res) => res.text())
+    .then((text) => {
+        var JSONdata = JSON.parse(text);
+        return JSONdata.mainMenuTableData; 
+    })
+    .catch((e) => console.error(e));
+    return "";
+}
+
 function start(){
-    fetch("dataJ.json")
+    var menuBlock = $(".main-menu-block .row-2").html();
+    var templates = getTemplatesData();
+    var menuContent = getMenuContentData();
+    var summHtmlBlock = "";
+
+    menuContent.forEach(menuElement => {
+        let tempMenuStroke = templates[0].data;
+        let tempMenuList = "";
+
+        tempMenuStroke.replace("@@MENUROWDATA@@", menuElement.Name);
+        menuElement.List.forEach(listElement => {
+            let tempListStroke = templates[1].data;
+            tempListStroke.replace("@@LIROWFUNCTION@@", listElement.Function);
+            tempListStroke.replace("@@LIROWICO@@", listElement.ico);
+            tempListStroke.replace("@@LIROWNAME@@", listElement.Name);
+            tempMenuList = tempMenuList + tempListStroke;
+        });
+
+        summHtmlBlock = summHtmlBlock + tempMenuList;
+    });
+
+    menuBlock.html( summHtmlBlock );
+}
+
+function data(){
+    fetch("menu_data.json")
         .then((res) => res.text())
         .then((text) => {
             var mydata = JSON.parse(text);
             alert(mydata.table[0].Id);
         })
         .catch((e) => console.error(e));
-}
-
-function getCode(id_data){
-    fetch("data.txt")
-        .then((res) => res.text())
-        .then((text) => {
-            var mydata = JSON.parse(text);
-            return mydata.table[id_data].Id;
-        })
-        .catch((e) => console.error(e));
-    return null;
 }
 
 function fill(){
