@@ -1,5 +1,5 @@
 function start(){
-    fetch("data.txt")
+    fetch("dataJ.json")
         .then((res) => res.text())
         .then((text) => {
             var mydata = JSON.parse(text);
