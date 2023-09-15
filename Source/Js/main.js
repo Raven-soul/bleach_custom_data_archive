@@ -24,6 +24,7 @@ async function getMenuContentData(templatesData) {
 
 async function awake(){
     setChapterTitle("Онлайн-справочник Bleach D&D 5e");
+    setMainSectionDataChapterTitle("Новости сайта");
     getTemplatesData();
 }
 
@@ -53,8 +54,4 @@ function mainMenuBuilder (menuContent, templates){
     });
 
     menuBlock.html( summHtmlBlock );
-}
-
-function setChapterTitle(title) {
-    $(".chapter-title-label").html( title );
 }

@@ -10,3 +10,11 @@ function hideChangeChevron(hideTagClassNameWithoutId, chevronClassNameWithoutId,
         $(chevronClassName).html( "<i class=\"fa-solid fa-chevron-left\"></i>" );
     }
 }
+
+function setChapterTitle(title) {
+    $(".chapter-title-label-data").html( title );
+}
+
+function setMainSectionDataChapterTitle(title) {
+    $(".chapter-data-container-data").html( title );
+}
