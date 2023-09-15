@@ -16,6 +16,7 @@ async function getMenuContentData(templatesData) {
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
+        debugger
         mainPageBuilder(JSONdata.mainMenuTableData, templatesData); 
     })
     .catch((e) => console.error(e));
