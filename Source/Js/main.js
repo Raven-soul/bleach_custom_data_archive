@@ -1,6 +1,6 @@
 async function getTemplatesData() {
     var result;
-    fetch("Source/Json/menu_data_templates.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data_templates.json
+    fetch("Source/Json/menu_data_templates.json")
     .then((res) => res.text())
     .then(async (text) => { 
         var JSONdata = JSON.parse(text);
@@ -12,7 +12,7 @@ async function getTemplatesData() {
 
 async function getMenuContentData(templatesData) {
     var result;
-    fetch("Source/Json/menu_data.json") //C:\Users\kozyrev\Desktop\соло\data\bleach_custom_data_archive\Source\Json\menu_data.json
+    fetch("Source/Json/menu_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
@@ -34,7 +34,11 @@ function mainPageBuilder (menuContent, templates){
     menuContent.forEach((menuElement) => {
         let tempMenuStroke = templates[0].data;
         let tempMenuList = "";
-        tempMenuStroke = tempMenuStroke.replace("@@MENUROWDATA@@", menuElement.Name);
+        tempMenuStroke = tempMenuStroke.replace("@@BLOCKFUNCTION@@", templates[0].Function);
+        tempMenuStroke = tempMenuStroke.replace(/@@BLOCKID@@/g, menuElement.Id);
+        tempMenuStroke = tempMenuStroke.replace("@@BLOCKCHEVRONCLASSNAME@@", templates[0].ChevronClassName);
+        tempMenuStroke = tempMenuStroke.replace("@@BLOCKLISTCLASSNAME@@", menuElement.ListClassName);
+        tempMenuStroke = tempMenuStroke.replace("@@BLOCKNAME@@", menuElement.Name);
         menuElement.List.forEach((listElement) => {
             let tempListStroke = templates[1].data;
             tempListStroke = tempListStroke.replace("@@LIROWFUNCTION@@", listElement.Function);
@@ -43,7 +47,7 @@ function mainPageBuilder (menuContent, templates){
             tempMenuList = tempMenuList + tempListStroke;
         });
 
-        tempMenuStroke = tempMenuStroke.replace("@@LISTDATA@@", tempMenuList);
+        tempMenuStroke = tempMenuStroke.replace("@@BLOCKLISTDATA@@", tempMenuList);
 
         summHtmlBlock = summHtmlBlock + tempMenuStroke;
     });

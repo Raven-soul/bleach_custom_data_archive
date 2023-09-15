@@ -3,6 +3,7 @@
         {
             "Id": 0,
             "Name": "Справочники",
+            "ListClassName": "main-menu-list-item",
             "List": [
                 {
                     "Id":1,

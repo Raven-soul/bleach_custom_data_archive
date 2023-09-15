@@ -1,0 +1,7 @@
+//hideChangeChevron('@@BLOCKLISTCLASSNAME@@', '@@BLOCKCHEVRONCLASSNAME@@', this)       
+// @@BLOCKFUNCTION@@, 
+// @@BLOCKID@@, 
+// @@BLOCKCHEVRONCLASSNAME@@, 
+// @@BLOCKLISTCLASSNAME@@,
+// @@BLOCKNAME@@, 
+// @@BLOCKLISTDATA@@   

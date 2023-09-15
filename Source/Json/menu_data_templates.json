@@ -3,7 +3,9 @@
         {
             "Id":0,
             "Name": "mainMenuTableRow",
-            "data": "<div class=\"col main-menu-block-item\"><button class=\"col w-100 px-3 main-menu-block-item-label\"><div class=\"row d-flex justify-content-between\"><div class=\"col label\">@@MENUROWDATA@@</div><div class=\"col-auto d-flex align-items-center\"><i class=\"fa-solid fa-chevron-down\"></i></div></div></button><div class=\"col main-menu-block-item-list\"><ul>@@LISTDATA@@</ul></div></div></div></div></div>"
+            "ChevronClassName": "menu-section-chevron-data",
+            "Function": "hideChangeChevron('@@BLOCKLISTCLASSNAME@@', '@@BLOCKCHEVRONCLASSNAME@@', this)",
+            "data": "<div class=\"col main-menu-block-item\"><button onclick=\"@@BLOCKFUNCTION@@\" id=\"@@BLOCKID@@\" class=\"col w-100 px-3 main-menu-block-item-label\"><div class=\"row d-flex justify-content-between\"><div class=\"col label\">@@BLOCKNAME@@</div><div class=\"col-auto d-flex align-items-center @@BLOCKCHEVRONCLASSNAME@@-@@BLOCKID@@\"><i class=\"fa-solid fa-chevron-down\"></i></div></div></button><div class=\"col main-menu-block-item-list @@BLOCKLISTCLASSNAME@@-@@BLOCKID@@\"><ul>@@BLOCKLISTDATA@@</ul></div></div></div></div></div>"
         },
         {
             "Id":1,
@@ -12,4 +14,4 @@
         }
     ]
 }
-
+                   
