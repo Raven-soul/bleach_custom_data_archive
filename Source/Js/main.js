@@ -36,8 +36,8 @@ function mainPageBuilder (menuContent, templates){
         let tempMenuList = "";
         tempMenuStroke = tempMenuStroke.replace("@@BLOCKFUNCTION@@", templates[0].Function);
         tempMenuStroke = tempMenuStroke.replace(/@@BLOCKID@@/g, menuElement.Id);
-        tempMenuStroke = tempMenuStroke.replace("@@BLOCKCHEVRONCLASSNAME@@", templates[0].ChevronClassName);
-        tempMenuStroke = tempMenuStroke.replace("@@BLOCKLISTCLASSNAME@@", menuElement.ListClassName);
+        tempMenuStroke = tempMenuStroke.replace(/@@BLOCKCHEVRONCLASSNAME@@/g, templates[0].ChevronClassName);
+        tempMenuStroke = tempMenuStroke.replace(/@@BLOCKLISTCLASSNAME@@/g, menuElement.ListClassName);
         tempMenuStroke = tempMenuStroke.replace("@@BLOCKNAME@@", menuElement.Name);
         menuElement.List.forEach((listElement) => {
             let tempListStroke = templates[1].data;
