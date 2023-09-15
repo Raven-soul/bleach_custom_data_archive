@@ -43,13 +43,13 @@
                 {
                     "Id":7,
                     "Name": "Черты",
-                    "ico": "",
+                    "ico": "<i class=\"fa-solid fa-lightbulb\"></i>",
                     "Function": ""
                 },
                 {
                     "Id":8,
                     "Name": "Способности",
-                    "ico": "",
+                    "ico": "<i class=\"fa-solid fa-burst\"></i>",
                     "Function": ""
                 }
             ]
