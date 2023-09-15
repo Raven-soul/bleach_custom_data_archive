@@ -16,24 +16,24 @@ async function getMenuContentData(templatesData) {
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
-        mainPageBuilder(JSONdata.mainMenuTableData, templatesData); 
+        mainMenuBuilder(JSONdata.mainMenuTableData, templatesData); 
     })
     .catch((e) => console.error(e));
     
 }
 
-async function start(){
+async function awake(){
+    setChapterTitle("Онлайн-справочник Bleach D&D 5e");
     getTemplatesData();
 }
 
-function mainPageBuilder (menuContent, templates){
+function mainMenuBuilder (menuContent, templates){
     var menuBlock = $(".main-menu-block .row-2");
     var summHtmlBlock = "";
-    
-
     menuContent.forEach((menuElement) => {
         let tempMenuStroke = templates[0].data;
         let tempMenuList = "";
+
         tempMenuStroke = tempMenuStroke.replace("@@BLOCKFUNCTION@@", templates[0].Function);
         tempMenuStroke = tempMenuStroke.replace(/@@BLOCKID@@/g, menuElement.Id);
         tempMenuStroke = tempMenuStroke.replace(/@@BLOCKCHEVRONCLASSNAME@@/g, templates[0].ChevronClassName);
@@ -55,16 +55,6 @@ function mainPageBuilder (menuContent, templates){
     menuBlock.html( summHtmlBlock );
 }
 
-function data(){
-    fetch("menu_data.json")
-        .then((res) => res.text())
-        .then((text) => {
-            var mydata = JSON.parse(text);
-            alert(mydata.table[0].Id);
-        })
-        .catch((e) => console.error(e));
-}
-
-function fill(){
-    alert('ready');
+function setChapterTitle(title) {
+    $(".chapter-title-label").html( title );
 }

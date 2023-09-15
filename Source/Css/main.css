@@ -92,14 +92,15 @@ footer {
 }
 .chapter-title-label {
     color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-left:  2px solid rgb(90, 89, 85); ;
 }
 .soul-data {
     border-right: 2px solid rgb(90, 89, 85);
 }
 .main-info-block {
-    background-color:  rgb(46, 46, 46);
     border-radius: 2px;
-    padding: 5px;
 }
 .main-info-block-item {
     background-color: rgb(236, 228, 217);
@@ -160,6 +161,9 @@ footer {
 }
 .main-info-block-chapter-label{
     color: white;
-    margin-bottom: 10px;
+    background-color:  rgb(46, 46, 46);
     font-size: 20px;
+}
+.chapter-data-container{
+    padding: 5px;
 }
