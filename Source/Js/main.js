@@ -32,16 +32,16 @@ function mainMenuBuilder (menuContent, templates){
     var menuBlock = $(".main-menu-block .row-2");
     var summHtmlBlock = "";
     menuContent.forEach((menuElement) => {
-        let tempMenuStroke = templates[0].data;
+        let tempMenuStroke = templates[0].segments[0].data;
         let tempMenuList = "";
 
-        tempMenuStroke = tempMenuStroke.replace("@@BLOCKFUNCTION@@", templates[0].Function);
+        tempMenuStroke = tempMenuStroke.replace("@@BLOCKFUNCTION@@", templates[0].segments[0].Function);
         tempMenuStroke = tempMenuStroke.replace(/@@BLOCKID@@/g, menuElement.Id);
-        tempMenuStroke = tempMenuStroke.replace(/@@BLOCKCHEVRONCLASSNAME@@/g, templates[0].ChevronClassName);
+        tempMenuStroke = tempMenuStroke.replace(/@@BLOCKCHEVRONCLASSNAME@@/g, templates[0].segments[0].ChevronClassName);
         tempMenuStroke = tempMenuStroke.replace(/@@BLOCKLISTCLASSNAME@@/g, menuElement.ListClassName);
         tempMenuStroke = tempMenuStroke.replace("@@BLOCKNAME@@", menuElement.Name);
         menuElement.List.forEach((listElement) => {
-            let tempListStroke = templates[1].data;
+            let tempListStroke = templates[0].segments[1].data;
             tempListStroke = tempListStroke.replace("@@LIROWFUNCTION@@", listElement.Function);
             tempListStroke = tempListStroke.replace("@@LIROWICO@@", listElement.ico);
             tempListStroke = tempListStroke.replace("@@LIROWNAME@@", listElement.Name);
