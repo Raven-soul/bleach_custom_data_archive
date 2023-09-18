@@ -72,7 +72,6 @@ function mainInfoBlockContentBuilder(infoBlockContent, templates){
 
     infoBlockContent.List.forEach((blockElement) => {
         let tempMenuStroke = templates[1].segments[0].data;
-        let tempMenuList = "";
 
         tempMenuStroke = tempMenuStroke.replace("@@INFOBLOCKNAME@@", blockElement.Name);
         tempMenuStroke = tempMenuStroke.replace("@@INFOBLOCKDATA@@", blockElement.Data);
@@ -82,5 +81,6 @@ function mainInfoBlockContentBuilder(infoBlockContent, templates){
         summHtmlBlock = summHtmlBlock + tempMenuStroke;
     });
 
+    debugger
     contentInfoBlockPosition.html( summHtmlBlock );
 }
