@@ -84,3 +84,7 @@ function mainInfoBlockContentBuilder(infoBlockContent, templates){
     debugger
     contentInfoBlockPosition.html( summHtmlBlock );
 }
+
+function fill() {
+    alert("ready");
+}

@@ -1,3 +1,9 @@
+@media (min-width: 1200px) {
+    .class-block-item{
+        padding-right: 4px;
+        width: 20%;
+    }
+}
 @media (min-width: 992px) {
     body {
         background-image: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0,212,255,0) 100%), url("../Images/urahara_back.png");
@@ -26,6 +32,12 @@
     .parting-words-wide {
         display: flex;
         align-items: center;
+    }
+}
+@media (max-width: 1200px) {
+    .class-block-item{
+        padding-right: 4px;
+        width: 25%;
     }
 }
 @media (max-width: 992px) {
@@ -60,6 +72,17 @@
     }
     .parting-words-wide {
         display: none;
+    }
+}
+@media (max-width: 768px) {
+    .class-block-item{
+        padding-right: 4px;
+        width: 33%;
+    }
+}
+@media (max-width: 576px) {
+    .class-block-item{
+        width: 100%;
     }
 }
 li {
@@ -200,4 +223,29 @@ footer {
 .news-info-block-body .image-data{
     display: flex;
     justify-content: center;
+}
+.grid-data {
+    display: flex;
+    flex-flow: row wrap;
+}
+.class-block-item .main-info-block-item {
+    position: relative;
+    height: 75px;
+}
+.class-block-item img {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.class-block-item .class-name-head {
+    font-size: 20px;
+    font-weight: 600;
+}
+.class-block-item .class-name-append {
+    font-style: italic;
+    margin-top: -7px;
+}
+.class-block-item .main-info-block-item:hover {
+    background-color: rgb(230, 206, 174);
 }
