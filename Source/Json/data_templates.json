@@ -23,7 +23,12 @@
                 {
                     "Id":0,
                     "Name": "mainInfoBlockNewsType",
-                    "data": "<div class=\"col main-menu-block-item\"><button onclick=\"@@BLOCKFUNCTION@@\" id=\"@@BLOCKID@@\" class=\"col w-100 px-3 main-menu-block-item-label\"><div class=\"row d-flex justify-content-between\"><div class=\"col label\">@@BLOCKNAME@@</div><div class=\"col-auto d-flex align-items-center @@BLOCKCHEVRONCLASSNAME@@-@@BLOCKID@@\"><i class=\"fa-solid fa-chevron-down\"></i></div></div></button><div class=\"col main-menu-block-item-list @@BLOCKLISTCLASSNAME@@-@@BLOCKID@@\"><ul>@@BLOCKLISTDATA@@</ul></div></div></div></div></div>"
+                    "data": "<div class=\"col  main-info-block-item\"><div class=\"row-2\"><div class=\"col news-info-block-header\">@@INFOBLOCKNAME@@</div><div class=\"col news-info-block-body\"><div class=\"row-2\"><div class=\"col\">@@INFOBLOCKDATA@@</div><div class=\"col image-data\"><img src=\"@@INFOBOCKIMAGE@@\"></div><div class=\"col\"><button class=\"p-0\" onclick=\"@@INFOBLOCKFUNCTION@@\">Читать дальше</button></div></div></div></div></div>"
+                },
+                {
+                    "Id":1,
+                    "Name": "mainInfoBlockClassType",
+                    "data": "<div class=\"col  main-info-block-item\"><div class=\"row-2\"><div class=\"col news-info-block-header\">@@INFOBLOCKNAME@@</div><div class=\"col news-info-block-body\"><div class=\"row-2\"><div class=\"col\">@@INFOBLOCKDATA@@</div><div class=\"col image-data\"><img src=\"@@INFOBOCKIMAGE@@\"></div><div class=\"col\"><button class=\"p-0\" onclick=\"@@INFOBLOCKFUNCTION@@\">Читать дальше</button></div></div></div></div></div>"
                 }
             ]
         }

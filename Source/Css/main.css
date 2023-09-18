@@ -111,7 +111,6 @@ footer {
 .main-info-block-item {
     background-color: rgb(236, 228, 217);
     border-radius: 2px;
-    padding: 10px 5px;
     margin-bottom: 10px;
 }
 .main-menu-block-item {
@@ -177,4 +176,28 @@ footer {
 .chapter-data-container-data {
     font-weight: 600;
     font-size: 24px;
+}
+.news-info-block-header {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 8px 4px 8px;
+}
+.news-info-block-body {
+    padding: 4px 8px 8px 8px;
+}
+.news-info-block-body .col button {
+    font-style: italic;
+}
+.news-info-block-body .col button:hover{
+    font-weight: 600;
+}
+.news-info-block-body img{
+    max-width: 40%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(48, 48, 48,0.5);
+    margin: 10px;
+}
+.news-info-block-body .image-data{
+    display: flex;
+    justify-content: center;
 }
