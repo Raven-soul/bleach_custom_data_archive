@@ -2,7 +2,7 @@
 
 async function awake(){
     setChapterTitle("Онлайн-справочник Bleach D&D 5e");
-    setMainSectionDataChapterTitle("Новости сайта");
+    setMainSectionDataChapterTitle("Новости сайта", true);
     getTemplatesData(0);
 }
 

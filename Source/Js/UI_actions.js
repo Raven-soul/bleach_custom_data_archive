@@ -15,6 +15,17 @@ function setChapterTitle(title) {
     $(".chapter-title-label-data").html( title );
 }
 
-function setMainSectionDataChapterTitle(title) {
-    $(".chapter-data-container-data").html( title );
+function setMainSectionDataChapterTitle(title, isPublish) {
+    var stroke = "<div class=\"chapter-data-container-label\" @@HIDDEN@@>@@DATA@@</div>"
+    debugger
+    
+    if(isPublish){
+        stroke = v.replace("@@DATA@@", title);
+        stroke = v.replace("@@HIDDEN@@", "");
+    } else {
+        stroke = v.replace("@@DATA@@", "");
+        stroke = v.replace("@@HIDDEN@@", "hidden");
+    }   
+
+    $(".chapter-data-container").html( stroke );
 }

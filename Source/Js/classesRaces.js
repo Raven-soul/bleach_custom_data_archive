@@ -2,6 +2,7 @@
 
 async function racesStartPage(){
     setChapterTitle("Рассы Bleach D&D 5e");
+    setMainSectionDataChapterTitle("", false);
     getSecondContentTemplatesData(1);
 }
 
