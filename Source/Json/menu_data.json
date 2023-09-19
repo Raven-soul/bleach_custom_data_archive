@@ -27,13 +27,13 @@
                     "Id":4,
                     "Name": "Рассы и происхождения",
                     "ico": "<i class=\"fa-solid fa-user-group\"></i>",
-                    "Function": ""
+                    "Function": "racesStartPage()"
                 },
                 {
                     "Id":5,
                     "Name": "Классы",
                     "ico": "<i class=\"fa-solid fa-person-digging\"></i>",
-                    "Function": ""
+                    "Function": "racesStartPage()"
                 },
                 {
                     "Id":6,

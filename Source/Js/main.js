@@ -1,17 +1,21 @@
+// start generation functions
+
 async function awake(){
     setChapterTitle("Онлайн-справочник Bleach D&D 5e");
     setMainSectionDataChapterTitle("Новости сайта");
     getTemplatesData(0);
 }
 
-async function getTemplatesData(blockTypeId) {
+// template functions
+
+async function getTemplatesData(contentBlockTypeId) {
     var result;
     fetch("Source/Json/data_templates.json")
     .then((res) => res.text())
     .then(async (text) => { 
         var JSONdata = JSON.parse(text);
         getMenuContentData(JSONdata.templates); 
-        getInfoBlockContentData(JSONdata.templates, blockTypeId)
+        getInfoBlockContentData(JSONdata.templates, contentBlockTypeId)
     })
     .catch((e) => console.error(e));
 }
@@ -27,16 +31,18 @@ async function getMenuContentData(templatesData) {
     .catch((e) => console.error(e));    
 }
 
-async function getInfoBlockContentData(templatesData, blockTypeId) {
+async function getInfoBlockContentData(templatesData, contentBlockTypeId) {
     var result;
     fetch("Source/Json/infoBlock_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
-        mainInfoBlockContentBuilder(JSONdata.mainInfoBlockData[blockTypeId], templatesData); 
+        mainInfoBlockContentBuilder(JSONdata.mainInfoBlockData[contentBlockTypeId], templatesData); 
     })
     .catch((e) => console.error(e));    
 }
+
+// content functions
 
 function mainMenuBuilder (menuContent, templates){
     var menuBlock = $(".main-menu-block .row-2");
@@ -81,7 +87,6 @@ function mainInfoBlockContentBuilder(infoBlockContent, templates){
         summHtmlBlock = summHtmlBlock + tempMenuStroke;
     });
 
-    debugger
     contentInfoBlockPosition.html( summHtmlBlock );
 }
 

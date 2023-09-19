@@ -1,6 +1,7 @@
 {
     "templates":[
         {
+            "Id":0,
             "Name":"Main menu template",
             "segments":[
                 {
@@ -18,6 +19,7 @@
             ]
         },
         {
+            "Id":1,
             "Name":"Main info block template",
             "segments":[
                 {
@@ -33,7 +35,8 @@
             ]
         },
         {
-            "Name":"Main info block template",
+            "Id":2,
+            "Name":"Main classes block template",
             "segments":[
                 {
                     "Id":0,
