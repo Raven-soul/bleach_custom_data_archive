@@ -17,14 +17,13 @@ function setChapterTitle(title) {
 
 function setMainSectionDataChapterTitle(title, isPublish) {
     var stroke = "<div class=\"chapter-data-container-label\" @@HIDDEN@@>@@DATA@@</div>"
-    debugger
     
     if(isPublish){
-        stroke = v.replace("@@DATA@@", title);
-        stroke = v.replace("@@HIDDEN@@", "");
+        stroke = stroke.replace("@@DATA@@", title);
+        stroke = stroke.replace("@@HIDDEN@@", "");
     } else {
-        stroke = v.replace("@@DATA@@", "");
-        stroke = v.replace("@@HIDDEN@@", "hidden");
+        stroke = stroke.replace("@@DATA@@", "");
+        stroke = stroke.replace("@@HIDDEN@@", "hidden");
     }   
 
     $(".chapter-data-container").html( stroke );
