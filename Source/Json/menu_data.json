@@ -33,7 +33,7 @@
                     "Id":5,
                     "Name": "Классы",
                     "ico": "<i class=\"fa-solid fa-person-digging\"></i>",
-                    "Function": "racesStartPage()"
+                    "Function": "classesStartPage()"
                 },
                 {
                     "Id":6,
