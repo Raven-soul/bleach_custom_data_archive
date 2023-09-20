@@ -265,6 +265,7 @@ footer {
 .class-block-item .class-name-head {
     font-size: 20px;
     font-weight: 600;
+    text-shadow: 1px 1px 2px white;
 }
 .class-block-item .class-name-append {
     font-style: italic;
