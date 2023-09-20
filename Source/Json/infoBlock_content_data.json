@@ -57,15 +57,15 @@
                     "List": [
                         {
                             "Id":0,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
+                            "HeadName": "Душа",
+                            "AppendName": "Soul",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "fill()"
                         },
                         {
                             "Id":1,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
+                            "HeadName": "Подчинитель",
+                            "AppendName": "Fullbringer",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "fill()"
                         },
@@ -78,22 +78,15 @@
                         },
                         {
                             "Id":3,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
+                            "HeadName": "Вайзард",
+                            "AppendName": "Visored",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "fill()"
                         },
                         {
                             "Id":4,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
-                        },
-                        {
-                            "Id":5,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
+                            "HeadName": "Пустой",
+                            "AppendName": "Hollow",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "fill()"
                         }
