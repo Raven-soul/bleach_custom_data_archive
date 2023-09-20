@@ -51,4 +51,5 @@ function RacesClassesContentBuilder(infoBlockContent, templates){
     gridHtmlBlock = gridHtmlBlock.replace("@@INFOBLOCKGRIDDATA@@", summHtmlBlock);
     
     contentInfoBlockPosition.html( gridHtmlBlock );
+    checkMobileMenuData();
 }

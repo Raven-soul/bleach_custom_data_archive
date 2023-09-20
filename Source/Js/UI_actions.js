@@ -28,3 +28,19 @@ function setMainSectionDataChapterTitle(title, isPublish) {
 
     $(".chapter-data-container").html( stroke );
 }
+
+function mobileMenuData(){
+    $('.main-menu-back').toggleClass('active');
+    $('.main-menu-block').toggleClass('active');
+    if($('.list-logo').attr('src')=='Source/Images/list_logo.png') {
+        $('.list-logo').attr('src', 'Source/Images/list_logo_exit.png');
+    } else {
+        $('.list-logo').attr('src', 'Source/Images/list_logo.png');
+    }   
+}
+
+function checkMobileMenuData(){
+    if($('.main-menu-back').attr('class')=='col main-menu-back active') {
+        mobileMenuData()
+    }
+}
