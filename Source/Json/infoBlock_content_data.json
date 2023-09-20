@@ -100,32 +100,12 @@
             "Group": [
                 {
                     "Id":0,
-                    "GroupName" : "Оснвные классы",
+                    "GroupName" : "Основные классы",
                     "List": [
                         {
                             "Id":0,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
-                        },
-                        {
-                            "Id":1,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
-                        }
-                    ]
-                },
-                {
-                    "Id":0,
-                    "GroupName" : "Побочные классы",
-                    "List": [
-                        {
-                            "Id":0,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
+                            "HeadName": "Синигами",
+                            "AppendName": "Shinigami",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "fill()"
                         },
@@ -138,29 +118,15 @@
                         },
                         {
                             "Id":2,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
+                            "HeadName": "Арранкар",
+                            "AppendName": "Arrancar",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "fill()"
                         },
                         {
                             "Id":3,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
-                        },
-                        {
-                            "Id":4,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
-                        },
-                        {
-                            "Id":5,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
+                            "HeadName": "Подчинитель",
+                            "AppendName": "Fullbringer",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "fill()"
                         }
