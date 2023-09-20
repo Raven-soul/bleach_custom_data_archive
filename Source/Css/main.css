@@ -282,3 +282,9 @@ footer {
     visibility: hidden;
     padding: 6px;
 }
+.group-name {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

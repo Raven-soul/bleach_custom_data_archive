@@ -37,15 +37,24 @@ function RacesClassesContentBuilder(infoBlockContent, templates){
     var summHtmlBlock = "";
     var gridHtmlBlock = templates[2].segments[0].data;
 
-    infoBlockContent.List.forEach((blockElement) => {
-        let tempMenuStroke = templates[2].segments[1].data;
+    infoBlockContent.Group.forEach((groupBlockElement) => {
+        var gridGroupHtmlBlock = templates[2].segments[1].data;
 
-        tempMenuStroke = tempMenuStroke.replace("@@INFOBLOCKCLASSFUNCTION@@", blockElement.Function);
-        tempMenuStroke = tempMenuStroke.replace("@@INFOBLOCKCLASSIMAGE@@", blockElement.Image);
-        tempMenuStroke = tempMenuStroke.replace("@@INFOBLOCKCLASSHEADNAME@@", blockElement.HeadName);
-        tempMenuStroke = tempMenuStroke.replace("@@INFOBLOCKCLASSAPPENDNAME@@", blockElement.AppendName);
+        gridGroupHtmlBlock = gridGroupHtmlBlock.replace("@@INFOBLOCKGRIDGROUPNAME@@", groupBlockElement.GroupName);
+        
+        var tempGroupList = ""
+        groupBlockElement.List.forEach((itemElement) => {
+            let tempGroupStroke = templates[2].segments[2].data;
 
-        summHtmlBlock = summHtmlBlock + tempMenuStroke;
+            tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSFUNCTION@@", itemElement.Function);
+            tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSIMAGE@@", itemElement.Image);
+            tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSHEADNAME@@", itemElement.HeadName);
+            tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSAPPENDNAME@@", itemElement.AppendName);
+
+            tempGroupList = tempGroupList + tempGroupStroke;
+        });
+
+        summHtmlBlock = summHtmlBlock + tempGroupList;
     });
 
     gridHtmlBlock = gridHtmlBlock.replace("@@INFOBLOCKGRIDDATA@@", summHtmlBlock);
