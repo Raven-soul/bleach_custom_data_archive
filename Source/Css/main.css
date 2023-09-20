@@ -126,8 +126,7 @@ footer {
     border-top: 2px solid rgb(90, 89, 85);
 }
 .header-row {
-    justify-content: space-between;
-    z-index: 4;
+    justify-content: space-between;    
 }
 .append-button-block { 
     display: flex;
@@ -136,6 +135,7 @@ footer {
 .header-back {
     background-color:rgb(44, 43, 42);
     border-bottom: 2px solid rgb(90, 89, 85);
+    z-index: 4;
 }
 .home-button, .list-button {
     background: none;
