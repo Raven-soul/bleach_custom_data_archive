@@ -54,7 +54,9 @@ function RacesClassesContentBuilder(infoBlockContent, templates){
             tempGroupList = tempGroupList + tempGroupStroke;
         });
 
-        summHtmlBlock = summHtmlBlock + tempGroupList;
+        gridGroupHtmlBlock = gridGroupHtmlBlock.replace("@@INFOBLOCKGRIDGROUPDATA@@", tempGroupList);
+
+        summHtmlBlock = summHtmlBlock + gridGroupHtmlBlock;
     });
 
     gridHtmlBlock = gridHtmlBlock.replace("@@INFOBLOCKGRIDDATA@@", summHtmlBlock);
