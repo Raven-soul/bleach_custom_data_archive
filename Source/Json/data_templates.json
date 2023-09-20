@@ -46,7 +46,7 @@
                 {
                     "Id":1,
                     "Name": "mainInfoBlockClassGroupHeaderType",
-                    "data": "<div class=\"group\"><div class=\"group-name\">@@INFOBLOCKGRIDGROUPNAME@@</div><div class=\"grid-data\">@@INFOBLOCKGRIDDATA@@</div></div>"
+                    "data": "<div class=\"group\"><div class=\"group-name\">@@INFOBLOCKGRIDGROUPNAME@@</div><div class=\"grid-data\">@@INFOBLOCKGRIDGROUPDATA@@</div></div>"
                 },
                 {
                     "Id":2,
