@@ -25,7 +25,7 @@
                 },
                 {
                     "Id":4,
-                    "Name": "Рассы и происхождения",
+                    "Name": "Расы и происхождения",
                     "ico": "<i class=\"fa-solid fa-user-group\"></i>",
                     "Function": "racesStartPage()"
                 },

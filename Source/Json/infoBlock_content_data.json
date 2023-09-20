@@ -37,16 +37,16 @@
                     "List": [
                         {
                             "Id":0,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "HeadName": "Искусственная душа",
+                            "AppendName": "Geccon",
+                            "Image":"Source/Images/geccon.png",
                             "Function": "fill()"
                         },
                         {
                             "Id":1,
-                            "HeadName": "Квинси",
-                            "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "HeadName": "Человек",
+                            "AppendName": "People",
+                            "Image":"Source/Images/people.png",
                             "Function": "fill()"
                         }
                     ]
@@ -127,7 +127,7 @@
                 },
                 {
                     "Id":0,
-                    "GroupName" : "Побочные рассы",
+                    "GroupName" : "Побочные классы",
                     "List": [
                         {
                             "Id":0,
