@@ -256,16 +256,21 @@ footer {
     z-index: 2;
     height: 75px;
 }
+.class-block-item .text-data {
+    position: relative;
+    z-index: 3;
+}
 .class-block-item img {
     height: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 2;
 }
 .class-block-item .class-name-head {
     font-size: 20px;
     font-weight: 600;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 1px 1px 3px white;
 }
 .class-block-item .class-name-append {
     font-style: italic;
