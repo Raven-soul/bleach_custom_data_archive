@@ -104,7 +104,7 @@
     }
 }
 body {
-    background: url("../Images/grimm_back.png") fixed no-repeat bottom left;
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0,212,255,0) 100%), url("../Images/grimm_back.png") fixed no-repeat bottom left;
 }
 li {
     list-style-type:none;
