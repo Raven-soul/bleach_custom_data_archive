@@ -12,11 +12,11 @@ async function getRacePageContentData(pageId) {
     .catch((e) => console.error(e));    
 }
 
-function RacePageContentBuilder(pageContet, pageName){
+function RacePageContentBuilder(pageContent, pageName){
     var contentInfoBlockPosition = $(".main-info-data-section .row-2");
-    contentInfoBlockPosition.html( pageContet.Data );
+    contentInfoBlockPosition.html( pageContent.Data );
 
     checkMobileMenuData();
-    setChapterTitle(pageContet + " - " + pageName);
+    setChapterTitle(pageContent.Name + " - " + pageName);
     setMainSectionDataChapterTitle("", false);
 }
