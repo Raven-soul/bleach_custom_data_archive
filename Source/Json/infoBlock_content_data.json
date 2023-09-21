@@ -37,6 +37,7 @@
                     "List": [
                         {
                             "Id":0,
+                            "SoulId" : 0,
                             "HeadName": "Искусственная душа",
                             "AppendName": "Geccon",
                             "Image":"Source/Images/geccon.png",
@@ -44,6 +45,7 @@
                         },
                         {
                             "Id":1,
+                            "SoulId" : 1,
                             "HeadName": "Человек",
                             "AppendName": "People",
                             "Image":"Source/Images/people.png",
@@ -56,35 +58,40 @@
                     "GroupName" : "Происхождения",
                     "List": [
                         {
-                            "Id":2,
+                            "Id":0,
+                            "SoulId" : 2,
                             "HeadName": "Душа",
                             "AppendName": "Soul",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":3,
+                            "Id":1,
+                            "SoulId" : 3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":4,
+                            "Id":2,
+                            "SoulId" : 4,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":5,
+                            "Id":3,
+                            "SoulId" : 5,
                             "HeadName": "Вайзард",
                             "AppendName": "Visored",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":6,
+                            "Id":4,
+                            "SoulId" : 6,
                             "HeadName": "Пустой",
                             "AppendName": "Hollow",
                             "Image":"Media/Квинси/Символ Квинси.png",
