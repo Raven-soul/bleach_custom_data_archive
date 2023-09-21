@@ -3,7 +3,7 @@ async function racePage(pageId){
 }
 
 async function getRacesContentData(pageId) {
-    var result;
+    debugger
     fetch("Source/Json/races_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
