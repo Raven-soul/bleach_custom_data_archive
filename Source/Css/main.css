@@ -35,6 +35,9 @@
         width: 350px;
         position: static;
     }
+    body {
+        background: url("../Images/kon.png") no-repeat fixed left bottom, url("../Images/grimm_empty_back.png");
+    }
 }
 @media (max-width: 1200px) {
     .class-block-item{
@@ -92,6 +95,10 @@
     .parting-words-wide {
         display: none;
     }
+    body {
+        background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0,212,255,0) 100%), url("../Images/grimm_empty_back.png");
+        background-size: cover;
+    }
 }
 @media (max-width: 768px) {
     .class-block-item{
@@ -104,9 +111,7 @@
         width: 100%;
     }
 }
-body {
-    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0,212,255,0) 100%), url("../Images/grimm_back.png") fixed no-repeat bottom left, url("../Images/grimm_empty_back.png") fixed;
-}
+
 li {
     list-style-type:none;
 }
