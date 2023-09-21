@@ -1,9 +1,8 @@
 async function racePage(pageId){
-    getRacesContentData(pageId);
+    getRacePageContentData(pageId);
 }
 
-async function getRacesContentData(pageId) {
-    debugger
+async function getRacePageContentData(pageId) {
     fetch("Source/Json/races_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
