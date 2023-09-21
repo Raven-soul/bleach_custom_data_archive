@@ -40,14 +40,14 @@
                             "HeadName": "Искусственная душа",
                             "AppendName": "Geccon",
                             "Image":"Source/Images/geccon.png",
-                            "Function": "fill()"
+                            "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":1,
                             "HeadName": "Человек",
                             "AppendName": "People",
                             "Image":"Source/Images/people.png",
-                            "Function": "fill()"
+                            "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]
                 },
@@ -60,35 +60,35 @@
                             "HeadName": "Душа",
                             "AppendName": "Soul",
                             "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
+                            "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":1,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
                             "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
+                            "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":2,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
                             "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
+                            "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":3,
                             "HeadName": "Вайзард",
                             "AppendName": "Visored",
                             "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
+                            "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":4,
                             "HeadName": "Пустой",
                             "AppendName": "Hollow",
                             "Image":"Media/Квинси/Символ Квинси.png",
-                            "Function": "fill()"
+                            "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]
                 }

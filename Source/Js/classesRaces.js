@@ -71,6 +71,7 @@ function RacesWebContentBuilder(infoBlockContent, templates){
             let tempGroupStroke = templates[2].segments[2].data;
 
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSFUNCTION@@", itemElement.Function);
+            tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSID@@", itemElement.Id);
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSIMAGE@@", itemElement.Image);
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSHEADNAME@@", itemElement.HeadName);
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSAPPENDNAME@@", itemElement.AppendName);
@@ -107,6 +108,7 @@ function ClassesWebContentBuilder(infoBlockContent, templates){
             let tempGroupStroke = templates[2].segments[2].data;
 
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSFUNCTION@@", itemElement.Function);
+            tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSID@@", itemElement.Id);
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSIMAGE@@", itemElement.Image);
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSHEADNAME@@", itemElement.HeadName);
             tempGroupStroke = tempGroupStroke.replace("@@INFOBLOCKCLASSAPPENDNAME@@", itemElement.AppendName);
