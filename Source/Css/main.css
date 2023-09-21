@@ -125,6 +125,12 @@ footer {
     padding: 10px;
     border-top: 2px solid rgb(90, 89, 85);
 }
+body p {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    font-weight: 350;
+}
 .header-row {
     justify-content: space-between;    
 }
@@ -298,4 +304,47 @@ footer {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
+}
+.main-info-block-item h3 {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.race-page .title-block{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+.race-page .race-name {
+    font-size: 25px;
+    font-weight: 600;
+}
+.race-page .origin-name strong, .race-page .right-epigraph strong{
+    font-weight: 500;
+}
+.race-page .right-epigraph {
+    margin-top: 15px;
+    text-align: right;
+    font-style: italic;
+}
+.race-page .page-content {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.underlined {
+    border-bottom: 1px solid #691414;
+    color: #691414;
+    padding: 0;
+    display: block;
+    margin: 0 0 8px;
+}
+.content-block {
+    margin-bottom: 15px;
+}
+.feature-race {
+    font-weight: 500;
+    font-style: italic;
+}
+.empty-line {
+    visibility: hidden;
 }
