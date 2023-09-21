@@ -4,7 +4,7 @@ async function racePage(pageId){
 
 async function getRacesContentData(pageId) {
     var result;
-    fetch("Source/Json/races_page_builder.json")
+    fetch("Source/Json/races_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
