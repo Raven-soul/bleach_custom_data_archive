@@ -36,7 +36,7 @@
         position: static;
     }
     body {
-        background: url("../Images/kon.png") no-repeat fixed left bottom, url("../Images/grimm_empty_back.png");
+        background: url("../Images/grimm_empty_back.png");
     }
 }
 @media (max-width: 1200px) {
