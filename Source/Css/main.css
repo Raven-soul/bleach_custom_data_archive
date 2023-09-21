@@ -259,6 +259,7 @@ footer {
 .class-block-item .text-data {
     position: relative;
     z-index: 3;
+    padding-top: 4px;
 }
 .class-block-item img {
     height: 100%;
