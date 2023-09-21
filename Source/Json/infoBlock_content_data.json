@@ -56,35 +56,35 @@
                     "GroupName" : "Происхождения",
                     "List": [
                         {
-                            "Id":0,
+                            "Id":2,
                             "HeadName": "Душа",
                             "AppendName": "Soul",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":1,
+                            "Id":3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":2,
+                            "Id":4,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":3,
+                            "Id":5,
                             "HeadName": "Вайзард",
                             "AppendName": "Visored",
                             "Image":"Media/Квинси/Символ Квинси.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":4,
+                            "Id":6,
                             "HeadName": "Пустой",
                             "AppendName": "Hollow",
                             "Image":"Media/Квинси/Символ Квинси.png",
