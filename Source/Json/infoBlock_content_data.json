@@ -113,7 +113,7 @@
                             "Id":0,
                             "HeadName": "Синигами",
                             "AppendName": "Shinigami",
-                            "Image":"Media/Сейрейтей_отряды/1.png",
+                            "Image":"Media/Сейрейтей_отряды/13_unbordering.png",
                             "Function": "fill()"
                         },
                         {
@@ -127,14 +127,14 @@
                             "Id":2,
                             "HeadName": "Арранкар",
                             "AppendName": "Arrancar",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Аранкары/espada_10.png",
                             "Function": "fill()"
                         },
                         {
                             "Id":3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
-                            "Image":"Media/Квинси/Fullbringer_silver_grud_2.png",
+                            "Image":"Media/Подчинители/Fullbringer_silver_grud_2.png",
                             "Function": "fill()"
                         }
                     ]
