@@ -62,7 +62,7 @@
                             "SoulId" : 2,
                             "HeadName": "Душа",
                             "AppendName": "Soul",
-                            "Image":"Media/Душа/Plus.png",
+                            "Image":"Media/Душа/Plus_grud.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
