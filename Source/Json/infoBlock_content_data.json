@@ -94,7 +94,7 @@
                             "SoulId" : 6,
                             "HeadName": "Пустой",
                             "AppendName": "Hollow",
-                            "Image":"Media/Пустые/Hollow_mask.png.png",
+                            "Image":"Media/Пустые/Hollow_mask.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]
