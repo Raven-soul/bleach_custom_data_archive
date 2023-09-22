@@ -70,7 +70,7 @@
                             "SoulId" : 3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
-                            "Image":"Media/Подчинители/Fullbringer.png",
+                            "Image":"Media/Подчинители/Fullbringer_silver.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
