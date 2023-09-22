@@ -40,7 +40,7 @@
                             "SoulId" : 0,
                             "HeadName": "Искусственная душа",
                             "AppendName": "Gecon",
-                            "Image":"Source/Images/geccon.png",
+                            "Image":"Source/Images/gecon_silver.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
@@ -48,7 +48,7 @@
                             "SoulId" : 1,
                             "HeadName": "Человек",
                             "AppendName": "People",
-                            "Image":"Source/Images/people.png",
+                            "Image":"Source/Images/people_silver.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]
