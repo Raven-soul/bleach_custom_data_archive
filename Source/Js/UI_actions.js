@@ -13,6 +13,7 @@ function hideChangeChevron(hideTagClassNameWithoutId, chevronClassNameWithoutId,
 
 function setChapterTitle(title) {
     $(".chapter-title-label-data").html( title );
+    checkFooter();
 }
 
 function setMainSectionDataChapterTitle(title, isPublish) {
