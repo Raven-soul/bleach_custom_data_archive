@@ -70,7 +70,7 @@
                             "SoulId" : 3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Подчинители/Fullbringer.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
@@ -78,7 +78,7 @@
                             "SoulId" : 4,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Квинси/Caihen.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
