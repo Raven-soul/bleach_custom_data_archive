@@ -86,7 +86,7 @@
                             "SoulId" : 5,
                             "HeadName": "Вайзард",
                             "AppendName": "Visored",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Вайзарды/Visored.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
@@ -94,7 +94,7 @@
                             "SoulId" : 6,
                             "HeadName": "Пустой",
                             "AppendName": "Hollow",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Пустые/Hollow.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]
