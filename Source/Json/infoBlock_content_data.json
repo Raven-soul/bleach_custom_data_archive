@@ -113,14 +113,14 @@
                             "Id":0,
                             "HeadName": "Синигами",
                             "AppendName": "Shinigami",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Сейрейтей_отряды/1.png",
                             "Function": "fill()"
                         },
                         {
                             "Id":1,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Квинси/Caihen.png",
                             "Function": "fill()"
                         },
                         {
@@ -134,7 +134,7 @@
                             "Id":3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
-                            "Image":"Media/Квинси/Символ Квинси.png",
+                            "Image":"Media/Квинси/Fullbringer_silver_grud_2.png",
                             "Function": "fill()"
                         }
                     ]
