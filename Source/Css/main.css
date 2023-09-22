@@ -353,3 +353,10 @@ body p {
 .empty-line {
     visibility: hidden;
 }
+.page-footer.fixed-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
