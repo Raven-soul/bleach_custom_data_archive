@@ -1,0 +1,47 @@
+{
+    "Name":"Заклинания Bleach D&D 5",
+    "Kido":[
+        {   "name": "Enkōsen",
+            "class": "Синигами",
+            "type":"Bakudō",
+            "school": "Abjuration",
+            "level" : 3,
+            "components": {
+                "verbal": true,
+                "samatic": true,
+                "material": false,
+                "materialData": ""
+            },      
+            "Casting Time": {
+                "action": true,
+                "bonus action": false,
+                "reaction": false,
+                "minutes": false,
+                "hours": false
+            },
+            "Concentration": false
+        },
+        {   "name": "Sai",
+            "level" : 0,
+            "class": "Синигами",
+            "type":"Bakudō",
+            "school": "Enchantment",
+            "components": {
+                "verbal": true,
+                "samatic": true,
+                "material": true,
+                "materialData": "(a small, straight piece of iron)"
+            },      
+            "casting Time": {
+                "action": true,
+                "bonus action": false,
+                "reaction": false,
+                "minutes": false,
+                "hours": false
+            },
+            "concentration": false,
+            "range": 
+        }
+            
+    ]
+}
