@@ -21,7 +21,7 @@ async function getRacePageTemplates(pageId) {
 }
 
 async function getRacePageContentData(templates, pageId) {
-    fetch("Source/Json/content/races_content_data.json")
+    fetch("Source/Json/content/end_pages/races_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
@@ -44,7 +44,7 @@ async function getClassPageTemplates(pageId) {
 }
 
 async function getClassPageContentData(templates, pageId) {
-    fetch("Source/Json/content/classes_content_data.json")
+    fetch("Source/Json/content/end_pages/classes_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);

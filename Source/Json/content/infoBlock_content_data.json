@@ -36,7 +36,6 @@
                     "GroupName" : "Расы",
                     "List": [
                         {
-                            "Id":0,
                             "SoulId" : 0,
                             "HeadName": "Искусственная душа",
                             "AppendName": "Gecon",
@@ -44,7 +43,6 @@
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":1,
                             "SoulId" : 1,
                             "HeadName": "Человек",
                             "AppendName": "People",
@@ -58,7 +56,6 @@
                     "GroupName" : "Происхождения",
                     "List": [
                         {
-                            "Id":0,
                             "SoulId" : 2,
                             "HeadName": "Душа",
                             "AppendName": "Soul",
@@ -66,7 +63,6 @@
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":1,
                             "SoulId" : 3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
@@ -74,7 +70,6 @@
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":2,
                             "SoulId" : 4,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
@@ -82,7 +77,6 @@
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":3,
                             "SoulId" : 5,
                             "HeadName": "Вайзард",
                             "AppendName": "Visored",
@@ -90,7 +84,6 @@
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":4,
                             "SoulId" : 6,
                             "HeadName": "Пустой",
                             "AppendName": "Hollow",
@@ -110,28 +103,28 @@
                     "GroupName" : "Основные классы",
                     "List": [
                         {
-                            "Id":0,
+                            "ClasslId" : 0,
                             "HeadName": "Синигами",
                             "AppendName": "Shinigami",
                             "Image":"Media/Сейрейтей_отряды/13_Unborder_without_white.png",
                             "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":1,
+                            "ClasslId" : 1,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
                             "Image":"Media/Квинси/Caihen.png",
                             "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":2,
+                            "ClasslId" : 2,
                             "HeadName": "Арранкар",
                             "AppendName": "Arrancar",
                             "Image":"Media/Аранкары/espada_10.png",
                             "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
-                            "Id":3,
+                            "ClasslId" : 3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
                             "Image":"Media/Подчинители/Fullbringer_silver_grud_2.png",
