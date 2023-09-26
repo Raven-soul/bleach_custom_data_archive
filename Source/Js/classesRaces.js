@@ -12,7 +12,7 @@ async function classesStartPage(){
 
 async function getRacesContentTemplatesData() {
     var result;
-    fetch("Source/Json/data_templates.json")
+    fetch("Source/Json/templates/data_templates.json")
     .then((res) => res.text())
     .then(async (text) => { 
         var JSONdata = JSON.parse(text);
@@ -23,7 +23,7 @@ async function getRacesContentTemplatesData() {
 
 async function getClassesContentTemplatesData() {
     var result;
-    fetch("Source/Json/data_templates.json")
+    fetch("Source/Json/templates/data_templates.json")
     .then((res) => res.text())
     .then(async (text) => { 
         var JSONdata = JSON.parse(text);
@@ -34,7 +34,7 @@ async function getClassesContentTemplatesData() {
 
 async function getRacesContentData(templatesData) {
     var result;
-    fetch("Source/Json/infoBlock_content_data.json")
+    fetch("Source/Json/content/infoBlock_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
@@ -45,7 +45,7 @@ async function getRacesContentData(templatesData) {
 
 async function getClassesContentData(templatesData) {
     var result;
-    fetch("Source/Json/infoBlock_content_data.json")
+    fetch("Source/Json/content/infoBlock_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);

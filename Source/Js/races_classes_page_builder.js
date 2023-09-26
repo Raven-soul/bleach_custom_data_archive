@@ -3,11 +3,15 @@ async function racePage(pageId){
     getRacePageTemplates(pageId);
 }
 
-// template and content data functions
+async function classPage(pageId){
+    getClassPageTemplates(pageId);
+}
+
+// Races data
 
 async function getRacePageTemplates(pageId) {
     var result;
-    fetch("Source/Json/data_templates.json")
+    fetch("Source/Json/templates/data_templates.json")
     .then((res) => res.text())
     .then(async (text) => { 
         var JSONdata = JSON.parse(text);
@@ -17,7 +21,30 @@ async function getRacePageTemplates(pageId) {
 }
 
 async function getRacePageContentData(templates, pageId) {
-    fetch("Source/Json/races_content_data.json")
+    fetch("Source/Json/content/races_content_data.json")
+    .then((res) => res.text())
+    .then(async (text) => {
+        var JSONdata = JSON.parse(text);
+        RacePageContentBuilder(templates, JSONdata.RacesPagesData[pageId], JSONdata.Name); 
+    })
+    .catch((e) => console.error(e));    
+}
+
+// Classes data
+
+async function getClassPageTemplates(pageId) {
+    var result;
+    fetch("Source/Json/templates/data_templates.json")
+    .then((res) => res.text())
+    .then(async (text) => { 
+        var JSONdata = JSON.parse(text);
+        getClassPageContentData(JSONdata.templates, pageId)
+    })
+    .catch((e) => console.error(e));
+}
+
+async function getClassPageContentData(templates, pageId) {
+    fetch("Source/Json/content/classes_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);

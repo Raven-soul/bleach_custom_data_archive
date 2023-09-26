@@ -10,7 +10,7 @@ async function awake(){
 
 async function getTemplatesData(contentBlockTypeId) {
     var result;
-    fetch("Source/Json/data_templates.json")
+    fetch("Source/Json/templates/data_templates.json")
     .then((res) => res.text())
     .then(async (text) => { 
         var JSONdata = JSON.parse(text);
@@ -22,7 +22,7 @@ async function getTemplatesData(contentBlockTypeId) {
 
 async function getMenuContentData(templatesData) {
     var result;
-    fetch("Source/Json/menu_data.json")
+    fetch("Source/Json/templates/menu_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
@@ -33,7 +33,7 @@ async function getMenuContentData(templatesData) {
 
 async function getInfoBlockContentData(templatesData, contentBlockTypeId) {
     var result;
-    fetch("Source/Json/infoBlock_content_data.json")
+    fetch("Source/Json/content/infoBlock_content_data.json")
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
