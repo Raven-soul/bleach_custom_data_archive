@@ -114,28 +114,28 @@
                             "HeadName": "Синигами",
                             "AppendName": "Shinigami",
                             "Image":"Media/Сейрейтей_отряды/13_Unborder_without_white.png",
-                            "Function": "fill()"
+                            "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":1,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
                             "Image":"Media/Квинси/Caihen.png",
-                            "Function": "fill()"
+                            "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":2,
                             "HeadName": "Арранкар",
                             "AppendName": "Arrancar",
                             "Image":"Media/Аранкары/espada_10.png",
-                            "Function": "fill()"
+                            "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "Id":3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
                             "Image":"Media/Подчинители/Fullbringer_silver_grud_2.png",
-                            "Function": "fill()"
+                            "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]
                 }
