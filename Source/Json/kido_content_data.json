@@ -40,7 +40,8 @@
                 "hours": false
             },
             "concentration": false,
-            "range": 
+            "range": 60,
+            "description":""
         }
             
     ]
