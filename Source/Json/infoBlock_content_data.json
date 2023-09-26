@@ -48,7 +48,7 @@
                             "SoulId" : 1,
                             "HeadName": "Человек",
                             "AppendName": "People",
-                            "Image":"Source/Images/people_silver.png",
+                            "Image":"Media/Человек/people_blue.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]
