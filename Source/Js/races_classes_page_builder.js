@@ -25,7 +25,7 @@ async function getRacePageContentData(templates, pageId) {
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
-        RacePageContentBuilder(templates, JSONdata.RacesPagesData[pageId], JSONdata.Name); 
+        RacePageContentBuilder(templates, JSONdata.PagesData[pageId], JSONdata.Name); 
     })
     .catch((e) => console.error(e));    
 }
@@ -48,7 +48,7 @@ async function getClassPageContentData(templates, pageId) {
     .then((res) => res.text())
     .then(async (text) => {
         var JSONdata = JSON.parse(text);
-        RacePageContentBuilder(templates, JSONdata.RacesPagesData[pageId], JSONdata.Name); 
+        RacePageContentBuilder(templates, JSONdata.PagesData[pageId], JSONdata.Name); 
     })
     .catch((e) => console.error(e));    
 }
