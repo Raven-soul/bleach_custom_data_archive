@@ -134,15 +134,15 @@
     }
     table .short{
         display: inline;
-    }
-    table.class-progress-table td {
-        padding-left: 2px;
-        padding-right: 2px;
-    }
+    }    
 }
 @media (max-width: 576px) {
     .class-block-item{
         width: 100%;
+    }
+    table.class-progress-table td {
+        padding-left: 2px;
+        padding-right: 2px;
     }
 }
 
