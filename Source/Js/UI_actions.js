@@ -53,3 +53,9 @@ function checkFooter() {
         $(".page-footer").attr('class','page-footer');
     }
 }
+
+function specializationBlockHide(hideBlockName, button) {
+    var id = button.getAttribute("id");
+    $('#'+ id).toggleClass('active');
+    $('.'+ hideBlockName + '-' + id).toggleClass('active');
+}

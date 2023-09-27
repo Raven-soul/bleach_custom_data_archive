@@ -77,6 +77,44 @@
                     "data": "<div class=\"col page-content\">@@RACEPAGEDATACONTENT@@</div>"
                 }
             ]
+        },
+        {
+            "Id":4,
+            "Name":"Class page",
+            "segments":[
+                {
+                    "Id":0,
+                    "Name": "mainInfoBlockClassPage",
+                    "data": "<div class=\"col main-info-block-item\"><div class=\"content-data-block\"><div class=\"row-2 race-page\">@@CLASSPAGECONTENT@@</div></div></div>"
+                    
+                },
+                {
+                    "Id":1,
+                    "Name": "mainInfoBlockClassPageHeader",
+                    "data": "<div class=\"col\"><div class=\"row-2 title-block\"><div class=\"col race-name\">@@CLASSNAME@@</div><div class=\"col origin-name\"><strong>Источник: </strong>@@CLASSDATASOURCE@@</div><div class=\"col right-epigraph\"><p>@@CLASSQUOTE@@</p><p>— @@CLASSQUOTEAUTHOR@@, <strong>@@CLASSQUOTEAUTHORPOST@@</strong></p></div></div></div>"
+                    
+                },
+                {
+                    "Id":2,
+                    "Name": "mainInfoBlockClassPageContent",
+                    "data": "<div class=\"col page-content\">@@CLASSPAGEDATACONTENT@@</div>"
+                },
+                {
+                    "Id":3,
+                    "Name": "mainInfoBlockClassCard",
+                    "data": "<div class=\"content-block\">@@CLASSEPIGRAPH@@</div><div class=\"content-block\"><h3 class=\"no-underlined-black\">Синигами</h3>@@CLASSTABLEDATA@@</div>@@CLASSINTRODUCTION@@@@CLASSHITDATA@@@@CLASSABILITYDATA@@<div class=\"content-block\"><h2 class=\"no-underlined\">@@CLASSARCHETYPENAME@@</h2><p>@@CLASSARCHETYPEDESCRIPTION@@</p>@@CLASSARCHETYPEITEM@@<p><div class=\"empty-line\">data</div></p></div>"
+                },
+                {
+                    "Id":4,
+                    "Name": "mainInfoBlockClassHitsDataCard",
+                    "data": "<div class=\"content-block\"><div class=\"additional-info\"><h3 class=\"no-underlined\">Хиты, владение и снаряжение</h3><div class=\"content-block\"><h3 class=\"no-underlined-black\">Хиты</h3><p><strong class=\"feature-class\">Кость Хитов:</strong> @@CLASSHITDICE@@</p><p><strong class=\"feature-class\">Хиты на 1 уровне:</strong> @@CLASSHITFIRSTLEVEL@@</p><p><strong class=\"feature-class\">Хиты на следующих уровнях:</strong> @@CLASSHITNEXTLEVEL@@</p></div><div class=\"content-block\"><h3 class=\"no-underlined-black\">Владение</h3><p><strong class=\"feature-class\">Броня:</strong> @@CLASSSKILLSARMOR@@</p><p><strong class=\"feature-class\">Оружие:</strong> @@CLASSSKILLSWEAPON@@</p><p><strong class=\"feature-class\">Инструменты:</strong> @@CLASSSKILLSTOOLS@@</p><p><strong class=\"feature-class\">Спасброски:</strong> @@CLASSSKILLSSAVES@@</p><p><strong class=\"feature-class\">Навыки:</strong> @@CLASSSKILLS@@</p></div><div class=\"content-block\"><h3 class=\"no-underlined-black\">Cнаряжение</h3><p>Вы начинаете со следующим снаряжением в дополнение к снаряжению, полученному за вашу предысторию:</p>@@CLASSEQUIPMENT@@</div></div></div>"
+                },
+                {
+                    "Id":5,
+                    "Name": "mainInfoBlockClassArchetypeDataCard",
+                    "data": "<div class=\"content-block\"><div class=\"hide-next-block-area\"><h2 class=\"no-underlined hide-next\" id=\"hide-next-0\" onclick=\"specializationBlockHide('hide-block', this)\">@@CLASSARCHETYPEITEMNAME@@</h2><div class=\"hide-next-block hide-block-hide-next-0\">@@CLASSARCHETYPEITEMDATA@@</div></div></div>"
+                }
+            ]
         }
     ]
 }

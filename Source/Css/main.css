@@ -310,11 +310,6 @@ body p {
     font-weight: 500;
     margin-bottom: 10px;
 }
-.main-info-block-item h4 {
-    font-size: 17px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 .main-info-block-item h3 {
     font-size: 17px;
     font-weight: 600;
@@ -398,4 +393,54 @@ body p {
 }
 .feature-class {
     font-weight: 500;
+}
+.class-progress-table {
+    margin: 15px 8px;   
+}
+.class-progress-table th, .class-progress-table td {
+    text-align: center;
+    border: 1px solid rgba(168, 168, 168,.3);
+}
+.class-progress-table td {
+    padding: 0px 8px;
+}
+.class-progress-table td.left-content {
+    text-align: left;
+}
+.class-progress-table .tb-head-row {
+    background-color: rgba(20, 20, 20, .1);
+}
+.class-progress-table th {
+    padding: 4px 8px;
+    font-weight: 600;
+}
+.page-content table tr:not(.tb-head-row):not(.tb-empty-row):hover {
+    background-color: rgba(255,165,0,.2);
+}
+.page-content table tr:nth-child(odd) {
+    background-color: rgba(20,20,20,.05);
+}
+.ability-level-description {
+    font-style: italic;
+    padding: 0;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+h2.hide-next:not(.active) {    
+    margin:0;
+}
+.hide-next-block-area {
+    padding: 8px;
+    border: 1px solid rgba(20,20,20,.1);
+    border-radius: 5px;
+    background-color: rgba(20,20,20,.05);
+}
+h2.hide-next:hover {
+    cursor:pointer;
+}
+.hide-next-block.active {
+    display: block;
+}
+.hide-next-block:not(.active) {
+    display: none;
 }
