@@ -64,7 +64,8 @@ function ClassPageContentBuilder(templates, pageContent, pageName){
 
 
     classCard = classCard.replace("@@CLASSEPIGRAPH@@", pageContent.Data.Epigraph);
-    classCard = classCard.replace("@@CLASSTABLEDATA@@", pageContent.Data.Table);  
+    classCard = classCard.replace("@@CLASSTABLENAME@@", pageContent.Data.Table.name);  
+    classCard = classCard.replace("@@CLASSTABLEDATA@@", pageContent.Data.Table.data);  
     classCard = classCard.replace("@@CLASSINTRODUCTION@@", pageContent.Data.Introdaction);
     classCard = classCard.replace("@@CLASSHITDATA@@", hitsCard);
     classCard = classCard.replace("@@CLASSABILITYDATA@@", pageContent.Data.AbilityData);
