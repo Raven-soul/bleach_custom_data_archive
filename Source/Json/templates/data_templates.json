@@ -112,7 +112,7 @@
                 {
                     "Id":5,
                     "Name": "mainInfoBlockClassArchetypeDataCard",
-                    "data": "<div class=\"content-block\"><div class=\"hide-next-block-area\"><h2 class=\"no-underlined hide-next\" id=\"hide-next-0\" onclick=\"specializationBlockHide('hide-block', this)\">@@CLASSARCHETYPEITEMNAME@@</h2><div class=\"hide-next-block hide-block-hide-next-0\">@@CLASSARCHETYPEITEMDATA@@</div></div></div>"
+                    "data": "<div class=\"content-block\"><div class=\"hide-next-block-area\"><h2 class=\"no-underlined hide-next\" id=\"hide-next-@@CLASSARCHETYPEITEMID@@\" onclick=\"specializationBlockHide('hide-block', this)\">@@CLASSARCHETYPEITEMNAME@@</h2><div class=\"hide-next-block hide-block-hide-next-@@CLASSARCHETYPEITEMID@@\">@@CLASSARCHETYPEITEMDATA@@</div></div></div>"
                 }
             ]
         }
