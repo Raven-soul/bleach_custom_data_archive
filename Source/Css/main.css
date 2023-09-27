@@ -3,6 +3,15 @@
         padding-right: 4px;
         width: 20%;
     }
+    table .long{
+        display: inline;
+    }
+    table .short{
+        display: none;
+    } 
+    .class-progress-table {
+        margin: 15px 8px;   
+    }
 }
 @media (min-width: 992px) {
     .list-button {
@@ -43,6 +52,15 @@
     .class-block-item{
         padding-right: 4px;
         width: 25%;
+    }
+    table .long{
+        display: none;
+    }
+    table .short{
+        display: inline;
+    }
+    .class-progress-table {
+        margin: 15px 0px;   
     }
 }
 @media (max-width: 992px) {
@@ -99,11 +117,23 @@
         background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0,212,255,0) 100%), url("../Images/back_vert.png");
         background-size: cover;
     }
+    table .long{
+        display: inline;
+    }
+    table .short{
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .class-block-item{
         padding-right: 4px;
         width: 33%;
+    }
+    table .long{
+        display: none;
+    }
+    table .short{
+        display: inline;
     }
 }
 @media (max-width: 576px) {
@@ -393,9 +423,6 @@ body p {
 }
 .feature-class {
     font-weight: 500;
-}
-.class-progress-table {
-    margin: 15px 8px;   
 }
 .class-progress-table th, .class-progress-table td {
     text-align: center;
