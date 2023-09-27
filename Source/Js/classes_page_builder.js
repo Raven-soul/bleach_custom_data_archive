@@ -78,7 +78,7 @@ function ClassPageContentBuilder(templates, pageContent, pageName){
     pageContent.Archetype.data.forEach((listElement) => {
         let archetypeCard = templates[4].segments[5].data;
         archetypeCard = archetypeCard.replace("@@CLASSARCHETYPEITEMNAME@@", listElement.Name);
-        archetypeCard = archetypeCard.replace(/@@CLASSARCHETYPEITEMID@@/g, listElement.id);
+        archetypeCard = archetypeCard.replace(/@@CLASSARCHETYPEITEMID@@/g, listElement.aTypeId);
         archetypeCard = archetypeCard.replace("@@CLASSARCHETYPEITEMDATA@@", listElement.data);
         tempHtmlSumm = tempHtmlSumm + archetypeCard;
     });
