@@ -66,14 +66,14 @@
                             "SoulId" : 3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
-                            "Image":"Media/Подчинители/Fullbringer_silver_grud_2.png",
+                            "Image":"Media/Fullbringer/Fullbringer_silver_grud_2.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "SoulId" : 4,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Caihen.png",
+                            "Image":"Media/Quincy/Caihen.png",
                             "Function": "racePage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
@@ -106,28 +106,28 @@
                             "ClasslId" : 0,
                             "HeadName": "Синигами",
                             "AppendName": "Shinigami",
-                            "Image":"Media/Сейрейтей_отряды/13_Unborder_without_white.png",
+                            "Image":"Media/Shinigami/13_Unborder_without_white.png",
                             "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "ClasslId" : 1,
                             "HeadName": "Квинси",
                             "AppendName": "Quincy",
-                            "Image":"Media/Квинси/Caihen.png",
+                            "Image":"Media/Quincy/Caihen.png",
                             "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "ClasslId" : 2,
                             "HeadName": "Арранкар",
                             "AppendName": "Arrancar",
-                            "Image":"Media/Аранкары/espada_10.png",
+                            "Image":"Media/Arrankars/espada_10.png",
                             "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         },
                         {
                             "ClasslId" : 3,
                             "HeadName": "Подчинитель",
                             "AppendName": "Fullbringer",
-                            "Image":"Media/Подчинители/Fullbringer_silver_grud_2.png",
+                            "Image":"Media/Fullbringer/Fullbringer_silver_grud_2.png",
                             "Function": "classPage(@@INFOBLOCKCLASSID@@)"
                         }
                     ]

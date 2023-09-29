@@ -85,7 +85,7 @@
                 {
                     "Id":0,
                     "Name": "mainInfoBlockClassPage",
-                    "data": "<div class=\"col main-info-block-item\"><div class=\"content-data-block\"><div class=\"row-2 race-page\">@@CLASSPAGECONTENT@@</div></div></div>"
+                    "data": "<div class=\"col main-info-block-item\"><div class=\"content-data-block\"><div class=\"race-page-data-background-image\"><img src=\"@@CLASSBACKGROUNDIMAGE@@\"></div><div class=\"row-2 race-page\">@@CLASSPAGECONTENT@@</div></div></div>"
                     
                 },
                 {

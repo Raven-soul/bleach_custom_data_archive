@@ -87,6 +87,7 @@ function ClassPageContentBuilder(templates, pageContent, pageName){
 
     contentBlock = contentBlock.replace("@@CLASSPAGEDATACONTENT@@", classCard);
 
+    summHtmlBlock = summHtmlBlock.replace("@@CLASSBACKGROUNDIMAGE@@", pageContent.BackgroundImage);
     summHtmlBlock = summHtmlBlock.replace("@@CLASSPAGECONTENT@@", headBlock + contentBlock);
 
     contentInfoBlockPosition.html( summHtmlBlock );
