@@ -48,6 +48,9 @@
     body {
         background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(0,212,255,0) 100%), url("../Images/back_vert.png");
     }
+    .race-page-data-background-image {
+        display: block;
+    }
 }
 @media (max-width: 1200px) {
     .class-block-item{
@@ -68,7 +71,7 @@
 @media (max-width: 992px) {
     content .container .active{
         transform: translateX(0);
-        z-index: 4;
+        z-index: 30;
     }
     content .main-menu-back {
         position: fixed;
@@ -123,6 +126,9 @@
         display: inline;
     }
     table .short{
+        display: none;
+    }
+    .race-page-data-background-image {
         display: none;
     }
 }
@@ -182,7 +188,7 @@ body p {
 .header-back {
     background-color:rgb(44, 43, 42);
     border-bottom: 2px solid rgb(90, 89, 85);
-    z-index: 4;
+    z-index: 20;
 }
 .home-button, .list-button {
     background: none;
@@ -410,7 +416,7 @@ body p {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 10;
+    z-index: 20;
   }
 .additional-info{
     background: rgba(89,192,184,.1);
@@ -481,16 +487,16 @@ h2.hide-next:hover {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     padding: 10px;
 }
 .content-data-block {
     position: relative;
 }.race-page-data-background-image img {
-    max-height: 650px;
-    filter: sepia(100%) saturate(100%) opacity(30%);;
+    max-height: 600px;
+    filter: sepia(100%) saturate(100%) opacity(20%);;
 }
 .race-page {
     position: relative;
-    z-index: 5;    
+    z-index: 6;    
 }
