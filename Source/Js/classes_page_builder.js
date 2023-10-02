@@ -39,6 +39,8 @@ function ClassPageContentBuilder(templates, pageContent, pageName){
     let classCard = templates[4].segments[3].data;
     let hitsCard = templates[4].segments[4].data;
 
+    let galleryBlock = templates[4].segments[6].data;
+
     headBlock = headBlock.replace("@@CLASSNAME@@", pageContent.Name);
     headBlock = headBlock.replace("@@CLASSDATASOURCE@@", pageContent.DataSource);
     headBlock = headBlock.replace("@@CLASSQUOTE@@", pageContent.Quote);
@@ -55,7 +57,7 @@ function ClassPageContentBuilder(templates, pageContent, pageName){
     hitsCard = hitsCard.replace("@@CLASSSKILLSSAVES@@", pageContent.Skills.SavingRols);
     hitsCard = hitsCard.replace("@@CLASSSKILLS@@", pageContent.Skills.Skills);
 
-    let tempHtmlSumm = ""
+    let tempHtmlSumm = "";
     pageContent.Equipment.forEach((listElement) => {
         tempHtmlSumm = tempHtmlSumm + listElement.data;
     });
@@ -74,7 +76,7 @@ function ClassPageContentBuilder(templates, pageContent, pageName){
     classCard = classCard.replace("@@CLASSARCHETYPEDESCRIPTION@@", pageContent.Archetype.description);
 
 
-    tempHtmlSumm = ""
+    tempHtmlSumm = "";
     pageContent.Archetype.data.forEach((listElement) => {
         let archetypeCard = templates[4].segments[5].data;
         archetypeCard = archetypeCard.replace("@@CLASSARCHETYPEITEMNAME@@", listElement.Name);
@@ -83,12 +85,21 @@ function ClassPageContentBuilder(templates, pageContent, pageName){
         tempHtmlSumm = tempHtmlSumm + archetypeCard;
     });
 
-    classCard = classCard.replace("@@CLASSARCHETYPEITEM@@", tempHtmlSumm);    
+    classCard = classCard.replace("@@CLASSARCHETYPEITEM@@", tempHtmlSumm);  
+    
+    tempHtmlSumm = "";
+    pageContent.Gallery.forEach((listElement) => {
+        let galleryGridItem = templates[4].segments[7].data;
+        galleryGridItem = galleryGridItem.replace(/@@CLASSGALLERYGRIDITEMURL@@/g, listElement.url);
+        tempHtmlSumm = tempHtmlSumm + galleryGridItem;
+    });
+
+    galleryBlock = galleryBlock.replace("@@CLASSGALLERYGRIDLIST@@", tempHtmlSumm);
 
     contentBlock = contentBlock.replace("@@CLASSPAGEDATACONTENT@@", classCard);
 
     summHtmlBlock = summHtmlBlock.replace("@@CLASSBACKGROUNDIMAGE@@", pageContent.BackgroundImage);
-    summHtmlBlock = summHtmlBlock.replace("@@CLASSPAGECONTENT@@", headBlock + contentBlock);
+    summHtmlBlock = summHtmlBlock.replace("@@CLASSPAGECONTENT@@", headBlock + contentBlock + galleryBlock);
 
     contentInfoBlockPosition.html( summHtmlBlock );
 

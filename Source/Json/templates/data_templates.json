@@ -113,6 +113,16 @@
                     "Id":5,
                     "Name": "mainInfoBlockClassArchetypeDataCard",
                     "data": "<div class=\"content-block\"><div class=\"hide-next-block-area\"><h2 class=\"no-underlined hide-next\" id=\"hide-next-@@CLASSARCHETYPEITEMID@@\" onclick=\"specializationBlockHide('hide-block', this)\">@@CLASSARCHETYPEITEMNAME@@</h2><div class=\"hide-next-block hide-block-hide-next-@@CLASSARCHETYPEITEMID@@\">@@CLASSARCHETYPEITEMDATA@@</div></div></div>"
+                },
+                {
+                    "Id":6,
+                    "Name": "gallleryGridBlock",
+                    "data": "<div class=\"col gallery\"><div class=\"gallery-head\"><div class=\"gallery-head-title\">Галерея</div> </div> <div class=\"gallery-body\"><div class=\"container\"><div class=\"row\">@@CLASSGALLERYGRIDLIST@@</div></div></div></div>"
+                },
+                {
+                    "Id":7,
+                    "Name": "gallleryGridBlockItem",
+                    "data": "<div class=\"col-auto image-crd\" onclick=\"galleryViewShow('@@CLASSGALLERYGRIDITEMURL@@')\"><img src=\"@@CLASSGALLERYGRIDITEMURL@@\"></div>"
                 }
             ]
         }

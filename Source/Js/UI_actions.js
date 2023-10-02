@@ -59,3 +59,12 @@ function specializationBlockHide(hideBlockName, button) {
     $('#'+ id).toggleClass('active');
     $('.'+ hideBlockName + '-' + id).toggleClass('active');
 }
+
+function galleryViewClose(){
+    $('.gallery-view.active').attr('class','gallery-view');
+}
+
+function galleryViewShow(url){
+    $('.gallery-view img').attr('src', url);
+    $('.gallery-view').attr('class','gallery-view active');
+}
