@@ -13,6 +13,9 @@
         margin: 15px 8px;   
         width: calc(100% - 16px);
     }
+    .race-page-data-background-image img {
+        max-width: 750px;
+    }
 }
 @media (min-width: 992px) {
     .list-button {
@@ -50,6 +53,9 @@
     }
     .race-page-data-background-image {
         display: block;
+    }
+    .race-page-data-background-image img {
+        max-width: 600px;
     }
 }
 @media (max-width: 1200px) {
@@ -494,7 +500,7 @@ h2.hide-next:hover {
     position: relative;
 }.race-page-data-background-image img {
     max-height: 600px;
-    filter: sepia(100%) saturate(100%) opacity(20%);;
+    filter: sepia(100%) saturate(100%) opacity(40%);;
 }
 .race-page {
     position: relative;
