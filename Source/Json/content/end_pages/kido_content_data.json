@@ -1,48 +1,125 @@
 {
-    "Name":"Заклинания Bleach D&D 5",
-    "Kido":[
-        {   "name": "Enkōsen",
-            "class": "Синигами",
-            "type":"Bakudō",
+    "Name": "Заклинания Bleach D&D 5",
+    "Kido": [
+        {
+            "name": "Enkōsen",
+            "kidoClass": "Синигами",
+            "type": "Bakudō",
             "school": "Abjuration",
-            "level" : 3,
+            "level": 3,
             "components": {
                 "verbal": true,
                 "samatic": true,
                 "material": false,
                 "materialData": ""
-            },      
-            "Casting Time": {
+            },
+            "timeCast": {
                 "action": true,
-                "bonus action": false,
+                "bonus_action": false,
                 "reaction": false,
                 "minutes": false,
-                "hours": false
+                "hours": false,
+                "reactionDescription": ""
             },
-            "Concentration": false
+            "concentration": false,
+            "range": 60,
+            "description": "До начала вашего следующего хода вы можете выбрать сопротивление урону, полученному от вызывающей атаки, или получить бонус +5 к КД, в том числе против вызывающей атаки. В любом случае вы не получите урона от магической ракеты."
         },
-        {   "name": "Sai",
-            "level" : 0,
-            "class": "Синигами",
-            "type":"Bakudō",
+        {
+            "name": "Sai",
+            "kidoClass": "Синигами",
+            "type": "Bakudō",
             "school": "Enchantment",
+            "level": 0,
             "components": {
                 "verbal": true,
                 "samatic": true,
                 "material": true,
                 "materialData": "(a small, straight piece of iron)"
-            },      
-            "casting Time": {
+            },
+            "timeCast": {
                 "action": true,
-                "bonus action": false,
+                "bonus_action": false,
                 "reaction": false,
                 "minutes": false,
-                "hours": false
+                "hours": false,
+                "reactionDescription": ""
             },
             "concentration": false,
             "range": 60,
-            "description":""
+            "description": ""
+        },
+        {
+            "name": "Air Bubble",
+            "kidoClass": "Человек",
+            "type": "Bakudō",
+            "school": "Conjuration",
+            "level": 2,
+            "components": {
+                "verbal": false,
+                "samatic": true,
+                "material": false,
+                "materialData": ""
+            },
+            "timeCast": {
+                "action": true,
+                "bonus_action": false,
+                "reaction": false,
+                "minutes": false,
+                "hours": false,
+                "reactionDescription": ""
+            },
+            "concentration": false,
+            "range": 60,
+            "description": "#### Air Bubble\r\n                        *2nd-level Conjuration*\r\n                        ___\r\n                        - **Casting Time:** 1 action\r\n                        - **Range:** 60 feet\r\n                        - **Components:** S\r\n                        - **Duration:**  24 hours\r\n                        ___\r\n                        You create a transparent globe around the head of a willing creature you can see within range. The globe is filled with fresh air that lasts until the spell ends. If the creature has more than one head, the globe of air appears around only one of its heads (which is all the creature needs to avoid suffocation, assuming that all its heads share the same respiratory system).\r\n            \r\n                        **At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, you can create two additional globes of fresh air for each slot level above 2nd.\r\n            "
+        },
+        {
+            "name": "Anathema",
+            "kidoClass": "Синигами",
+            "type": "Hadō",
+            "school": "Enchantment",
+            "level": 9,
+            "components": {
+                "verbal": true,
+                "samatic": true,
+                "material": false,
+                "materialData": ""
+            },
+            "timeCast": {
+                "action": true,
+                "bonus_action": false,
+                "reaction": false,
+                "minutes": false,
+                "hours": false,
+                "reactionDescription": ""
+            },
+            "concentration": false,
+            "range": 5,
+            "description": "#### Anathema\r\n                        *9th-level Enchantment* [Kaidō]\r\n                        ___\r\n                        - **Casting Time:** 1 action\r\n                        - **Range:** 5 feet\r\n                        - **Components:** V, S\r\n                        - **Duration:**  Special\r\n                        ___\r\n                        You can attempt to pierce the Saketsu and Hakusui of a creature and seal their spiritual power. You make a melee spell attack against a creature you can see within range. On a success the target takes 14d6 necrotic damage and loses access to any magical abilities or effects it has such as spellcasting, class abilities and magical racial abilities.\r\n            \r\n                        This spell does not affect plants or constructs.\r\n            \r\n                        At the beginning of each day, the target can make a Constitution saving throw and continue to make saving throws until they either succeed three times or fail three times, whichever comes first. On a third failure, the creature dies. On a third success, this spell ends on that creature.\r\n            "
+        },
+        {
+            "name": "Antimagic Ray",
+            "kidoClass": "Синигами",
+            "type": "Kaidō",
+            "school": "Abjuration",
+            "level": 8,
+            "components": {
+                "verbal": true,
+                "samatic": true,
+                "material": true,
+                "materialData": "(A pinch of powdered iron or iron filings)"
+            },
+            "timeCast": {
+                "action": true,
+                "bonus_action": false,
+                "reaction": false,
+                "minutes": false,
+                "hours": false,
+                "reactionDescription": ""
+            },
+            "concentration": true,
+            "range": 60,
+            "description": "#### Antimagic Ray\r\n                        *8th-level Abjuration* [Kaidō]\r\n                        ___\r\n                        - **Casting Time:** 1 action\r\n                        - **Range:** 60 feet\r\n                        - **Components:** V, S, M (A pinch of powdered iron or iron filings)\r\n                        - **Duration:**  Concentration, up to 1 hour\r\n                        ___\r\n                        A shimmering beam of energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target is treated as if they were within an Antimagic Field for the duration of this spell.\r\n            \r\n                        **At Higher Levels.** When you cast this spell using a 9th-level spell slot, you create two additional rays.\r\n            \r\n                        \\columnbreak"
         }
-            
     ]
 }
